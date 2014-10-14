@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 1.2.0
+
+* Import Statistics from the main app
+* Import funding raised per project report from the main app
+* Use neighborly/crowdfunding as dummy app
+
+
 ## 1.1.1
 
 * Fix by_progress filter on project
