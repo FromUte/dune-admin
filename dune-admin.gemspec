@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = %w(legrand.work@gmail.com)
   spec.summary       = 'Dune Admin.'
   spec.description   = 'This is the admin of dune-investissement'
-  spec.homepage      = 'https://github.com/dune/dune-admin'
+  spec.homepage      = 'https://github.com/FromUte/dune-admin'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
