@@ -4,7 +4,7 @@ gemfile_url = File.join(File.dirname(__FILE__), 'spec/dummy/Gemfile')
 gemfile_content = File.open(gemfile_url, 'rb') { |f| f.read }
 
 gemspec_gems = %w(
-  neighborly-admin'
+  dune-admin'
   spring'
 )
 eval_gemfile gemfile_url, (gemfile_content.split("\n").reject do |line|

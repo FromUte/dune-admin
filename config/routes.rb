@@ -1,4 +1,4 @@
-Neighborly::Admin::Engine.routes.draw do
+Dune::Admin::Engine.routes.draw do
   root to: 'dashboard#index'
   resources :tags, except: [:show]
   resources :press_assets, except: [:show]

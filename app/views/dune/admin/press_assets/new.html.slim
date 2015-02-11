@@ -1,0 +1,9 @@
+- content_tag :title, t('.title')
+.admin
+  .row
+    = render 'dune/admin/layouts/menu'
+    section.content.large-12.columns
+      .title 
+        h3 = @title = t('.title')
+
+      = render 'form'

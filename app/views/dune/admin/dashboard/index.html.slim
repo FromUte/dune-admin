@@ -1,0 +1,65 @@
+- @title = t('.title')
+- @statistics = collection.first
+.admin
+  .row
+    = render 'dune/admin/layouts/menu'
+    section.content.large-12.columns
+      .text-right
+        = link_to t('.download_funding_raised_per_project_report'), reports_funding_raised_per_project_reports_path(format: :csv), class: 'button small secondary'
+        | &nbsp;
+        = link_to t('.download_statistics_report'), reports_statistics_path(format: :csv), class: 'button small secondary'
+
+      .row.collapse
+        .large-6.small-6.columns
+          .box
+            .title = t('.total_contributions.title')
+            p = @statistics.total_contributions
+            .hint = t('.total_contributions.hint')
+
+        .large-6.small-6.columns
+          .box
+            .title = t('.total_contributors.title')
+            p = @statistics.total_contributors
+            .hint = t('.total_contributors.hint')
+
+        .large-6.small-6.columns
+          .box
+            .title = t('.total_contributed.title')
+            p = number_to_currency @statistics.total_contributed
+            .hint = t('.total_contributed.hint')
+
+        .large-6.small-6.columns
+          .box
+            .title = t('.total_users.title')
+            p = @statistics.total_users
+            .hint = t('.total_users.hint')
+
+        .large-6.small-6.columns
+          .box
+            .title = t('.total_organization_users.title')
+            p = @statistics.total_organization_users
+            .hint = t('.total_organization_users.hint')
+
+        .large-6.small-6.columns
+          .box
+            .title = t('.total_communities.title')
+            p = @statistics.total_communities
+            .hint = t('.total_communities.hint')
+
+        .large-6.small-6.columns
+          .box
+            .title = t('.total_projects.title')
+            p = @statistics.total_projects
+            .hint = t('.total_projects.hint')
+
+        .large-6.small-6.columns
+          .box
+            .title = t('.total_projects_draft.title')
+            p = @statistics.total_projects_draft
+            .hint = t('.total_projects_draft.hint')
+
+        .large-6.small-6.columns
+          .box
+            .title = t('.total_projects_online.title')
+            p = @statistics.total_projects_online
+            .hint = t('.total_projects_online.hint')
