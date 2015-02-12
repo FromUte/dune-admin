@@ -1,5 +1,5 @@
-require 'neighborly/admin/engine'
-require 'neighborly/admin/version'
+require 'dune/admin/engine'
+require 'dune/admin/version'
 require 'best_in_place'
 require 'postgres-copy'
 
