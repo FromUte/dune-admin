@@ -1,14 +1,14 @@
-Neighborly.Neighborly ?= {}
-Neighborly.Neighborly.Admin ?= {}
-Neighborly.Neighborly.Admin.Channels ?= {}
+Dune.Dune ?= {}
+Dune.Dune.Admin ?= {}
+Dune.Dune.Admin.Channels ?= {}
 
-Neighborly.Neighborly.Admin.Channels.New =
+Dune.Dune.Admin.Channels.New =
   init: Backbone.View.extend
     el: '.admin'
 
     initialize: ->
-      this.$('.markdown-editor').markItUp(Neighborly.markdownSettings)
+      this.$('.markdown-editor').markItUp(Dune.markdownSettings)
 
 
-Neighborly.Neighborly.Admin.Channels.Edit =
-  modules: -> [Neighborly.Neighborly.Admin.Channels.New]
+Dune.Dune.Admin.Channels.Edit =
+  modules: -> [Dune.Dune.Admin.Channels.New]

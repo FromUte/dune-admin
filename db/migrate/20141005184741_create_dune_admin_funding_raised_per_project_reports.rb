@@ -1,7 +1,7 @@
-class CreateNeighborAdminFundingRaisedPerProjectReports < ActiveRecord::Migration
+class CreateDuneAdminFundingRaisedPerProjectReports < ActiveRecord::Migration
   def up
     execute <<-SQL
-        CREATE OR REPLACE VIEW neighborly_admin_funding_raised_per_project_reports AS
+        CREATE OR REPLACE VIEW dune_admin_funding_raised_per_project_reports AS
         SELECT
           project.id AS project_id,
           project.name AS project_name,
@@ -16,6 +16,6 @@ class CreateNeighborAdminFundingRaisedPerProjectReports < ActiveRecord::Migratio
   end
 
   def down
-    drop_view :neighborly_admin_funding_raised_per_project_reports
+    drop_view :dune_admin_funding_raised_per_project_reports
   end
 end

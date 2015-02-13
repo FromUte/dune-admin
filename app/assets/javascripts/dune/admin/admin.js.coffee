@@ -1,10 +1,10 @@
-Neighborly.Neighborly ?= {}
-Neighborly.Neighborly.Admin ?= {}
+Dune.Dune ?= {}
+Dune.Dune.Admin ?= {}
 
-Neighborly.Neighborly.Admin.modules =-> [Neighborly.Neighborly.Admin.Common,
-                                         Neighborly.Neighborly.Admin.Modules.Sort]
+Dune.Dune.Admin.modules =-> [Dune.Dune.Admin.Common,
+                                         Dune.Dune.Admin.Modules.Sort]
 
-Neighborly.Neighborly.Admin.Common = Backbone.View.extend
+Dune.Dune.Admin.Common = Backbone.View.extend
   el: '.admin'
 
   initialize: ->

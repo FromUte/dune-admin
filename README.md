@@ -1,10 +1,11 @@
-# Neighborly::Admin
+# Dune::Admin
 
-[![Build Status](https://travis-ci.org/neighborly/neighborly-admin.png?branch=master)](https://travis-ci.org/neighborly/neighborly-admin) [![Code Climate](https://codeclimate.com/github/neighborly/neighborly-admin.png)](https://codeclimate.com/github/neighborly/neighborly-admin)
+
 
 ## What
 
-This is the admin of [Neighborly](https://github.com/luminopolis/neighborly), a Civic Crowdfunding platform.
+This is the admin of [Dune](https://github.com/FromUte/dune), a Civic Crowdfunding platform.
+Originally create by neighborly developper
 
 ## How
 
@@ -21,16 +22,16 @@ And install the migrations:
 $ bundle exec rake railties:install:migrations db:migrate
 ```
 
-Neighborly::Admin is a Rails Engine, integrating with your (Neighborly) Rails application with very little of effort. To turn the engine on, mount it in an appropriate route:
+Dune::Admin is a Rails Engine, integrating with your (Dune) Rails application with very little of effort. To turn the engine on, mount it in an appropriate route:
 
 ```ruby
 # config/routes.rb
-mount Neighborly::Admin::Engine => '/admin/', as: :neighborly_admin
+mount Dune::Admin::Engine => '/admin/', as: :dune_admin
 ```
 And load our JavaScript:
 
 ```
-//= require neighborly-admin
+//= require dune-admin
 ```
 
 ## Contributing
@@ -45,7 +46,7 @@ And load our JavaScript:
 
 We prize for our test suite and coverage, so it would be great if you could run the specs to ensure that your patch is not breaking the existing codebase.
 
-When running specs for the first time, you'll need to download Neighborly's source code to be tested against your version of the gem. The following command will install the dummy app in `spec/dummy`.
+When running specs for the first time, you'll need to download Dune's source code to be tested against your version of the gem. The following command will install the dummy app in `spec/dummy`.
 
 ```
 $ git submodule init
