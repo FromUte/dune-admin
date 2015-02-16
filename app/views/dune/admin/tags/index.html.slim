@@ -39,6 +39,6 @@
                     .text-right
                       = link_to t('.edit'), edit_tag_path(tag), class: 'button tiny'
                       | &nbsp;
-                      = link_to t('.destroy'), tag_path(tag), method: :delete, confirm: t('neighborly.admin.confirm_dialog'), class: 'button tiny alert'
+                      = link_to t('.destroy'), tag_path(tag), method: :delete, confirm: t('dune.admin.confirm_dialog'), class: 'button tiny alert'
 
         = paginate @tags

@@ -32,7 +32,7 @@
                   td = member.email
                   td
                     .text-right
-                      = link_to t('.destroy'), channel_member_path(parent, member), method: :delete, confirm: t('neighborly.admin.confirm_dialog'), class: 'button tiny alert'
+                      = link_to t('.destroy'), channel_member_path(parent, member), method: :delete, confirm: t('dune.admin.confirm_dialog'), class: 'button tiny alert'
 
         = paginate @members
 

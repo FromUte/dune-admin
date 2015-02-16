@@ -144,7 +144,7 @@
 
                       - if project.can_push_to_trash?
                         li
-                          = link_to project_path(project), method: :delete, data: {confirm: t('neighborly.admin.confirm_dialog')} do
+                          = link_to project_path(project), method: :delete, data: {confirm: t('dune.admin.confirm_dialog')} do
                             = t('.send_to_trash')
         = paginate @projects
 

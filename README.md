@@ -13,7 +13,7 @@ Include this gem as dependency of your project, adding the following line in you
 
 ```ruby
 # Gemfile
-gem 'neighborly-admin'
+gem 'dune-admin'
 ```
 
 And install the migrations:
